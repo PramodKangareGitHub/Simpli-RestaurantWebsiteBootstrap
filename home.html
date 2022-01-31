@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        padding: 100px;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .card{
+        background-color: greenyellow;
+      }
+    
+    </style>
+  </head>
+  <body>
+  
+    <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
+        id="pvk-navbar"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="color: green; font-weight: bold"
+            >PVK Restaurant</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bestseller">Best Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+      <div
+        class="main"
+        data-bs-spy="scroll"
+        data-bs-target="#pvk-navbar"
+        data-bs-offset="0"
+        class="scrollspy-example"
+        tabindex="0"
+      >
+        <div id="home" style="min-height: 720px">
+          <div class="row">
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="500">
+                  <img
+                    src="carousel-items/Design1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block"
+                    style="color: green; background-color: white"
+                  >
+                    <p>
+                      Good restaurant design is about achieving equilibrium
+                      between the food, service, and design - in effect, telling
+                      a complete story
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="carousel-items/Design2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block"
+                    style="color: green; background-color: white"
+                  >
+                    <p>Beauty is health. Health is beauty.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="carousel-items/Design3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block"
+                    style="color: green; background-color: white"
+                  >
+                    <p>
+                      The design of a restaurant should embrace the identity of
+                      the chef, the nature of the cuisine, and the context of
+                      the restaurant itself.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  style="background-color: green"
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  style="background-color: green"
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" style="min-height: 720px; padding-top: 100px">
+          <div class="row">
+            <center style="color: green; font-weight: bold">
+              ABOUT PVK RESTAURANT
+            </center>
+          </div>
+          <div class="row" style="padding-top: 20px">
+            <div class="col-6">
+              <img src="Restaurant-Logo.png" style="width: 80%" alt="" />
+            </div>
+            <div class="col-6">
+              <p>
+                PVK RESTAURANT recently refurbished with a new look and a fleet
+                of modern amenities to appeal to the modern traveler. The lobby
+                takes the stage at the heart of the hotel and has an old-world
+                charm to it
+              </p>
+              <p><h3>History of Restaurants</h3></p>
+              <p>
+                Restaurants are classified or distinguished in many different ways. 
+                The primary factors are usually the food itself (e.g. vegetarian, seafood, 
+                steak); the cuisine (e.g. Italian, Chinese, Japanese, Indian, French, 
+                Mexican, Thai) or the style of offering (e.g. tapas bar, a sushi train, 
+                a tastet restaurant, a buffet restaurant or a yum cha restaurant). 
+                Beyond this, restaurants may differentiate themselves on factors 
+                including speed (see fast food), formality, location, cost, service, 
+                or novelty themes (such as automated restaurants). Some of these include 
+                fine dining, casual dining, contemporary casual, family style, fast casual,
+                fast food, cafes, buffet, concession stands, food trucks, pop-up restaurants,
+                diners, and ghost restaurants.
+              </p>
+
+              <p>
+                Restaurant Basilica at the shoreline of Kellosaarenranta by night in 
+                Ruoholahti, Helsinki, Finland Restaurants range from inexpensive 
+                and informal lunching or dining places catering to people working 
+                nearby, with modest food served in simple settings at low prices, 
+                to expensive establishments serving refined food and fine wines 
+                in a formal setting. In the former case, customers usually wear 
+                casual clothing. In the latter case, depending on culture and local
+                traditions, customers might wear semi-casual, semi-formal or formal wear.
+                Typically, at mid- to high-priced restaurants, customers sit at tables, 
+                their orders are taken by a waiter, who brings the food when it is ready. 
+                After eating, the customers then pay the bill. In some restaurants, such 
+                as workplace cafeterias, there are no waiters; the customers use trays, 
+                on which they place cold items that they select from a refrigerated container
+                and hot items which they request from cooks, and then they pay a cashier
+                before they sit down. Another restaurant approach which uses few waiters
+                is the buffet restaurant. Customers serve food onto their own plates and
+                then pay at the end of the meal. Buffet restaurants typically still have 
+                waiters to serve drinks and alcoholic beverages. Fast food restaurants 
+                are also considered a restaurant. In addition, food trucks are another 
+                popular option for people who want quick food service.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="bestseller" style="min-height: 720px; padding-top: 100px">
+          <div class="row">
+            <center style="color: green; font-weight: bold">BEST SELLER</center>
+          </div>
+          <div class="row" style="padding-top: 20px">
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="best-sellers/VEG1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VEG THALI</h5>
+                  <p class="card-text">10 % Discount</p>
+                  <a class="btn btn-primary">More Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="best-sellers/VEG2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VEG BHAHUBALI THALI</h5>
+                  <p class="card-text">30 % Discount</p>
+                  <a class="btn btn-primary">More Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="best-sellers/NON-VEG1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NON-VEG THALI</h5>
+                  <p class="card-text">15 % OFF</p>
+                  <a class="btn btn-primary">More Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="best-sellers/NON-VEG2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NON-VEG BHAHUBALI THALI</h5>
+                  <p class="card-text">35 % OFF</p>
+                  <a class="btn btn-primary">More Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" style="min-height: 720px; padding-top: 100px">
+          <div class="row">
+            <center style="color: green; font-weight: bold">Contact Us</center>
+          </div>
+          <div class="row" style="padding-top: 20px">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Query</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#queryConfirmModel"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="queryConfirmModel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Query confirmation</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Query Submitted successfully</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
